@@ -133,7 +133,7 @@ class KelurahanSeeder extends Seeder
         for($i = 0; $i < count($data); $i++){
             $kelurahan = new Kelurahan();
             $kelurahan->nama_kelurahan = $data[$i]['nama_kelurahan'];
-            $kelurahan->kecamatan_id = ($data[$i]['kecamatan_id']+1);
+            $kelurahan->kecamatan_id = ($data[$i]['kecamatan_id']);
             $kelurahan->save();
         }
     }
